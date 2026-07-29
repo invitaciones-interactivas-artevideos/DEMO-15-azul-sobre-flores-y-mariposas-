@@ -17,7 +17,7 @@
             /* 1. COLORES GENERALES */
             --color-principal-rosa: #f0f4f8;
             --color-secundario-rosa-fuerte: #3b82f6;
-            --color-dorado-brillante: #c59b48;
+            --color-dorado-brillante: #0d0085;
             --color-dorado-claro: #ebd08d;
             --color-fondo-crema: #fffdf5;
 
@@ -257,7 +257,7 @@
 
                 <section class="gold-section" id="sec-intro" style="margin-top: 30px;">
                     <p style="text-transform: uppercase; letter-spacing: 2px; color: var(--color-secundario-rosa-fuerte); font-weight: bold;">Mis 15 años</p>
-                    <p class="title-fancy" style="font-size: 3.8rem; margin: 10px 0;">Nacha</p>
+                    <p class="title-fancy" style="font-size: 3.8rem; margin: 10px 0;">Isabella</p>
                     <p style="font-style: italic;">"Hay momentos inolvidables<br> que se atesoran en el<br> corazón para siempre,<br> acompáñame a vivir el mío."</p>
                 </section>
 
@@ -267,7 +267,7 @@
 
                 <section class="gold-section" id="sec-reserva">
                     <p class="txt-reserva">Agendá la fecha</p>
-                    <p class="txt-mes">Setiembre 2026</p>
+                    <p class="txt-mes">noviembre 2026</p>
                     
                     <table class="calendar">
                         <thead><tr> <th>L</th> <th>M</th> <th>M</th> <th>J</th> <th>V</th> <th>S</th> <th>D</th> </tr></thead>
@@ -366,7 +366,7 @@
 
                 <!-- CORRECCIÓN DEL MARGEN ENORME (Cambiado padding-bottom a 60px) -->
                 <div style="text-align: center; margin-top: 50px; padding-bottom: 60px; position: relative; z-index: 5;" id="sec-despedida">
-                    <p class="title-fancy" style="font-size: 3.5rem; position: relative; z-index: 20;">¡No faltes!</p>
+                    <p class="title-fancy" style="font-size: 3.5rem; position: relative; z-index: 20;">No Faltes</p>
                 </div>
             </div>
         </div>
@@ -376,28 +376,28 @@
         const CONF_INVITACION = {
             letraSello: "N",               
             mostrarFotoPrincipal: false,    
-            mostrarGaleria: false,          
-            mostrarMusica: false,           
+            mostrarGaleria: true,          
+            mostrarMusica: true,           
             
             confirmarConFormulario: true, 
             mostrarSugerenciaCancion: true,
-            mostrarAlbumFotos: false,       
-            mostrarInstagram: false,  
+            mostrarAlbumFotos: true,       
+            mostrarInstagram: true,  
             mostrarIconoAsistencia: true,      
             
             mesEvento: 09,                  
             anioEvento: 2026,              
-            fechaExactaEvento: "september 12, 2026 21:00:00" 
+            fechaExactaEvento: "november 21, 2026 21:00:00" 
         };
 
         const CONFIG_DECORACIONES = {
             secIntro: {       
-                imagen: "", 
+                imagen: "mariposa2.png", 
                 tamano: "112px",
                 anclajeVertical: "arriba", 
                 distanciaVertical: "-80px",   
                 anclajeHorizontal: "derecha", 
-                distanciaHorizontal: "-20px", 
+                distanciaHorizontal: "0px", 
                 voltearEspejo: true, 
                 animacionFlotar: true 
             },
@@ -432,17 +432,17 @@
                 animacionFlotar: true
             },
             secGaleria: {     
-                imagen: "",   
+                imagen: "mariposa3.png",   
                 tamano: "100px",
                 anclajeVertical: "arriba",
                 distanciaVertical: "-30px",
                 anclajeHorizontal: "derecha",
                 distanciaHorizontal: "-20px", 
                 voltearEspejo: false,
-                animacionFlotar: false
+                animacionFlotar: true
             },
             secFiesta: {      
-                imagen: "",
+                imagen: "flores1.png",
                 tamano: "130px",
                 anclajeVertical: "arriba",
                 distanciaVertical: "-40px",
@@ -452,13 +452,13 @@
                 animacionFlotar: false
             },
             secAsistencia: {  
-                imagen: "", 
+                imagen: "flores1.png", 
                 tamano: "120px",
                 anclajeVertical: "abajo",
                 distanciaVertical: "-30px",
                 anclajeHorizontal: "derecha",
                 distanciaHorizontal: "-20px",
-                voltearEspejo: false,
+                voltearEspejo: true,
                 animacionFlotar: false
             },
             secCancion: {     
@@ -472,8 +472,8 @@
                 animacionFlotar: false
             },
             secAlbum: {       
-                imagen: "", 
-                tamano: "80px",
+                imagen: "mariposa4.png", 
+                tamano: "100px",
                 anclajeVertical: "arriba",
                 distanciaVertical: "-20px",
                 anclajeHorizontal: "izquierda",
@@ -482,11 +482,11 @@
                 animacionFlotar: true
             },
             secIg: {          
-                imagen: "", 
+                imagen: "mariposa3.png", 
                 tamano: "100px",
                 anclajeVertical: "arriba",
                 distanciaVertical: "-30px",
-                anclajeHorizontal: "centro",
+                anclajeHorizontal: "derecha",
                 distanciaHorizontal: "0px",
                 voltearEspejo: false,
                 animacionFlotar: false
@@ -502,21 +502,21 @@
                 animacionFlotar: false
             },
             secRegalo: {      
-                imagen: "", 
-                tamano: "100px",
-                anclajeVertical: "abajo",
-                distanciaVertical: "-40px",
-                anclajeHorizontal: "derecha",
-                distanciaHorizontal: "-20px",
+                imagen: "flores2.png", 
+                tamano: "120px",
+                anclajeVertical: "arriba",
+                distanciaVertical: "-20px",
+                anclajeHorizontal: "iquierda",
+                distanciaHorizontal: "10px",
                 voltearEspejo: false,
                 animacionFlotar: false
             },
             secDespedida: {   
-                imagen: "", 
-                tamano: "400px",             
-                anclajeVertical: "abajo",
-                distanciaVertical: "0px",    
-                anclajeHorizontal: "centro",
+                imagen: "mariposa1.png", 
+                tamano: "120px",             
+                anclajeVertical: "arriba",
+                distanciaVertical: "-30px",    
+                anclajeHorizontal: "izquierda",
                 distanciaHorizontal: "0px",  
                 voltearEspejo: false,
                 animacionFlotar: false       
